@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		497595E32695AEE00066C7AC /* DemoDataListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497595E22695AEE00066C7AC /* DemoDataListManager.swift */; };
+		497595E52695AF270066C7AC /* dataList.json in Resources */ = {isa = PBXBuildFile; fileRef = 497595E42695AF270066C7AC /* dataList.json */; };
 		49C7F9EB2694B48400EB9F3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7F9EA2694B48400EB9F3B /* AppDelegate.swift */; };
-		49C7F9ED2694B48400EB9F3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7F9EC2694B48400EB9F3B /* SceneDelegate.swift */; };
 		49C7F9EF2694B48400EB9F3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7F9EE2694B48400EB9F3B /* ViewController.swift */; };
 		49C7F9F22694B48400EB9F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C7F9F02694B48400EB9F3B /* Main.storyboard */; };
 		49C7F9F42694B48600EB9F3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C7F9F32694B48600EB9F3B /* Assets.xcassets */; };
@@ -38,9 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		497595E22695AEE00066C7AC /* DemoDataListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDataListManager.swift; sourceTree = "<group>"; };
+		497595E42695AF270066C7AC /* dataList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dataList.json; sourceTree = SOURCE_ROOT; };
 		49C7F9E72694B48400EB9F3B /* ReadJSONFromFile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadJSONFromFile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C7F9EA2694B48400EB9F3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49C7F9EC2694B48400EB9F3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		49C7F9EE2694B48400EB9F3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49C7F9F12694B48400EB9F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49C7F9F32694B48600EB9F3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,11 +108,12 @@
 			isa = PBXGroup;
 			children = (
 				49C7F9EA2694B48400EB9F3B /* AppDelegate.swift */,
-				49C7F9EC2694B48400EB9F3B /* SceneDelegate.swift */,
 				49C7F9EE2694B48400EB9F3B /* ViewController.swift */,
 				49C7FA1C2694B67E00EB9F3B /* DemoData.swift */,
 				49C7FA1E2694B6EE00EB9F3B /* DemoDataManager.swift */,
+				497595E22695AEE00066C7AC /* DemoDataListManager.swift */,
 				49C7FA1A2694B64D00EB9F3B /* data.json */,
+				497595E42695AF270066C7AC /* dataList.json */,
 				49C7F9F02694B48400EB9F3B /* Main.storyboard */,
 				49C7F9F32694B48600EB9F3B /* Assets.xcassets */,
 				49C7F9F52694B48600EB9F3B /* LaunchScreen.storyboard */,
@@ -243,6 +246,7 @@
 				49C7FA1B2694B64D00EB9F3B /* data.json in Resources */,
 				49C7F9F72694B48600EB9F3B /* LaunchScreen.storyboard in Resources */,
 				49C7F9F42694B48600EB9F3B /* Assets.xcassets in Resources */,
+				497595E52695AF270066C7AC /* dataList.json in Resources */,
 				49C7F9F22694B48400EB9F3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,10 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C7FA1F2694B6EE00EB9F3B /* DemoDataManager.swift in Sources */,
+				497595E32695AEE00066C7AC /* DemoDataListManager.swift in Sources */,
 				49C7F9EF2694B48400EB9F3B /* ViewController.swift in Sources */,
 				49C7FA1D2694B67E00EB9F3B /* DemoData.swift in Sources */,
 				49C7F9EB2694B48400EB9F3B /* AppDelegate.swift in Sources */,
-				49C7F9ED2694B48400EB9F3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
