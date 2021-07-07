@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DemoData: Codable {
+struct StoryData: Codable {
     
     let title, image, description: String
 }

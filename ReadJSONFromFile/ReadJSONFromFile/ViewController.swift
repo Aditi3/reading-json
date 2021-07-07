@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    private var demoData: DemoData?
-    private var demoDataList: [DemoData]?
+    private var demoData: StoryData?
+    private var demoDataList: [StoryData]?
 
     
     override func viewDidLoad() {
@@ -22,9 +22,10 @@ class ViewController: UIViewController {
     
     func requestDemoData() {
         ///[weak self]  ensures that once the completion handler returns some code, the app can release the memory
-        DemoDataManager().fetchDemoData { [weak self] (data) in
+        StoryManager().fetchDemoData { [weak self] (data) in
             /// Do something with the data the completion handler returns
             print(data)
+            print("===================================")
             self?.demoData = data
             /// Reload the view using the main dispatch queue
             DispatchQueue.main.async {
@@ -37,13 +38,14 @@ class ViewController: UIViewController {
     
     func requestDemoDataList() {
         ///[weak self]  ensures that once the completion handler returns some code, the app can release the memory
-        DemoDataListManager().fetchDemoDataList { [weak self] (data) in
+        StoriesManager().fetchDemoDataList { [weak self] (data) in
             /// Do something with the data the completion handler returns
             self?.demoDataList = data
             for demo in self?.demoDataList ?? [] {
                 print(demo.title)
                 print(demo.description)
                 print(demo.image)
+                print("===================================")
             }
             /// Reload the view using the main dispatch queue
             DispatchQueue.main.async {

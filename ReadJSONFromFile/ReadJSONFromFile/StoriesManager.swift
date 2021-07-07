@@ -1,16 +1,18 @@
 //
-//  DemoDataService.swift
+//  DemoDataListManager.swift
 //  ReadJSONFromFile
 //
-//  Created by Aditi Agrawal on 06/07/21.
+//  Created by Aditi Agrawal on 07/07/21.
 //
 
 import Foundation
 
-class DemoDataManager {
+import Foundation
+
+class StoriesManager {
     
-    func fetchDemoData(success: @escaping (DemoData) -> (), failure: @escaping (String) -> ()) {
-        if let localData = self.readLocalFile(forName: "data") {
+    func fetchDemoDataList(success: @escaping ([StoryData]) -> (), failure: @escaping (String) -> ()) {
+        if let localData = self.readLocalFile(forName: "dataList") {
             let demoData = self.parse(jsonData: localData)
             demoData != nil ? success(demoData!) : failure("Oops! Something went wrong.")
         }
@@ -32,14 +34,10 @@ class DemoDataManager {
         return nil
     }
     
-    private func parse(jsonData: Data) -> DemoData? {
+    private func parse(jsonData: Data) -> [StoryData]? {
         do {
-            let decodedData = try JSONDecoder().decode(DemoData.self,
+            let decodedData = try JSONDecoder().decode([StoryData].self,
                                                        from: jsonData)
-            print("Title: ", decodedData.title)
-            print("Description: ", decodedData.description)
-            print("Image URL: ", decodedData.image)
-            print("===================================")
             return decodedData
         } catch {
             print("JSON Parse error: \(error.localizedDescription)")
