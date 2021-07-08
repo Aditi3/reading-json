@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		497595EF2695B94F0066C7AC /* ParseJSONFromURL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseJSONFromURL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		497595EF2695B94F0066C7AC /* ReadJSONFromURL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadJSONFromURL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		497595F22695B94F0066C7AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		497595F62695B94F0066C7AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		497595F92695B94F0066C7AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		497595E62695B94F0066C7AC = {
 			isa = PBXGroup;
 			children = (
-				497595F12695B94F0066C7AC /* ParseJSONFromURL */,
+				497595F12695B94F0066C7AC /* ReadJSONFromURL */,
 				497595F02695B94F0066C7AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		497595F02695B94F0066C7AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				497595EF2695B94F0066C7AC /* ParseJSONFromURL.app */,
+				497595EF2695B94F0066C7AC /* ReadJSONFromURL.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		497595F12695B94F0066C7AC /* ParseJSONFromURL */ = {
+		497595F12695B94F0066C7AC /* ReadJSONFromURL */ = {
 			isa = PBXGroup;
 			children = (
 				497595F22695B94F0066C7AC /* AppDelegate.swift */,
@@ -67,15 +67,15 @@
 				497595FD2695B9500066C7AC /* LaunchScreen.storyboard */,
 				497596002695B9500066C7AC /* Info.plist */,
 			);
-			path = ParseJSONFromURL;
+			path = ReadJSONFromURL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		497595EE2695B94F0066C7AC /* ParseJSONFromURL */ = {
+		497595EE2695B94F0066C7AC /* ReadJSONFromURL */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 497596032695B9500066C7AC /* Build configuration list for PBXNativeTarget "ParseJSONFromURL" */;
+			buildConfigurationList = 497596032695B9500066C7AC /* Build configuration list for PBXNativeTarget "ReadJSONFromURL" */;
 			buildPhases = (
 				497595EB2695B94F0066C7AC /* Sources */,
 				497595EC2695B94F0066C7AC /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = ParseJSONFromURL;
+			name = ReadJSONFromURL;
 			productName = ParseJSONFromURL;
-			productReference = 497595EF2695B94F0066C7AC /* ParseJSONFromURL.app */;
+			productReference = 497595EF2695B94F0066C7AC /* ReadJSONFromURL.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 497595EA2695B94F0066C7AC /* Build configuration list for PBXProject "ParseJSONFromURL" */;
+			buildConfigurationList = 497595EA2695B94F0066C7AC /* Build configuration list for PBXProject "ReadJSONFromURL" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				497595EE2695B94F0066C7AC /* ParseJSONFromURL */,
+				497595EE2695B94F0066C7AC /* ReadJSONFromURL */,
 			);
 		};
 /* End PBXProject section */
@@ -291,12 +291,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ParseJSONFromURL/Info.plist;
+				INFOPLIST_FILE = ReadJSONFromURL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aditi.ParseJSONFromURL;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aditi.ReadJSONFromURL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,12 +309,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ParseJSONFromURL/Info.plist;
+				INFOPLIST_FILE = ReadJSONFromURL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aditi.ParseJSONFromURL;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aditi.ReadJSONFromURL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -324,7 +324,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		497595EA2695B94F0066C7AC /* Build configuration list for PBXProject "ParseJSONFromURL" */ = {
+		497595EA2695B94F0066C7AC /* Build configuration list for PBXProject "ReadJSONFromURL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				497596012695B9500066C7AC /* Debug */,
@@ -333,7 +333,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		497596032695B9500066C7AC /* Build configuration list for PBXNativeTarget "ParseJSONFromURL" */ = {
+		497596032695B9500066C7AC /* Build configuration list for PBXNativeTarget "ReadJSONFromURL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				497596042695B9500066C7AC /* Debug */,

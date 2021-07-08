@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  ParseJSONFromURL
+//  ReadJSONFromURL
 //
 //  Created by Aditi Agrawal on 07/07/21.
 //
