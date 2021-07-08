@@ -21,16 +21,13 @@ class ViewController: UIViewController {
         
         AnimalManager().fetchAnimals { animals in
             for animal in animals {
-                print(animal.name)
-                print(animal.description)
-                print(animal.image)
+                print(animal.name ?? "")
+                print(animal.image ?? "")
                 print("===================================")
             }
         } failure: { errorString in
             print(errorString)
         }
-        
     }
-    
 }
 

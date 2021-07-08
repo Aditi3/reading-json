@@ -11,7 +11,7 @@ class AnimalManager {
     
     func fetchAnimals(success: @escaping ([AnimalData]) -> (), failure: @escaping (String) -> ()) {
         
-        let urlString = "https://raw.githubusercontent.com/programmingwithswift/ReadJSONFileURL/master/hostedDataFile.json"
+        let urlString = "https://elephant-api.herokuapp.com/elephants"
         
         self.loadJson(fromURLString: urlString) { (result) in
             switch result {
@@ -27,17 +27,26 @@ class AnimalManager {
     
     private func loadJson(fromURLString urlString: String,
                           completion: @escaping (Result<Data, Error>) -> Void) {
+        
         if let url = URL(string: urlString) {
-            let urlSession = URLSession(configuration: .default).dataTask(with: url) { (data, response, error) in
+            
+            let task = URLSession(configuration: .default).dataTask(with: url) { (data, response, error) in
+                
                 if let error = error {
                     completion(.failure(error))
+                }
+                
+                guard let httpResponse = response as? HTTPURLResponse,
+                      (200...299).contains(httpResponse.statusCode) else {
+                    print("Error with the response, unexpected status code: \(String(describing: response))")
+                    return
                 }
                 
                 if let data = data {
                     completion(.success(data))
                 }
             }
-            urlSession.resume()
+            task.resume()
         }
     }
     
@@ -47,7 +56,7 @@ class AnimalManager {
                                                        from: jsonData)
             return decodedData
         } catch {
-            print("decode error")
+            print(error.localizedDescription)
             return nil
         }
     }

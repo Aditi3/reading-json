@@ -7,9 +7,17 @@
 
 import Foundation
 
-
 struct AnimalData: Codable {
-    var name, image, description: String
+    
+    let id: String
+    let name: String?
+    let image: String?
+    let note: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "_id"
+        case  name, image, note
+    }
 }
 
 
